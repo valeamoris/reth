@@ -24,6 +24,7 @@ members = [
     "crates/consensus/common/",
     "crates/consensus/consensus/",
     "crates/consensus/debug-client/",
+    "crates/consensus/hotstuff/",
     "crates/dst/",
     "crates/e2e-test-utils/",
     "crates/engine/invalid-block-hooks/",
@@ -145,6 +146,7 @@ members = [
     "examples/exex-subscription",
     "examples/exex-test",
     "examples/full-contract-state",
+    "examples/hotstuff-node/",
     "examples/manual-p2p/",
     "examples/network-txpool/",
     "examples/network/",
@@ -346,6 +348,7 @@ reth-config = { path = "crates/config", default-features = false }
 reth-consensus = { path = "crates/consensus/consensus", default-features = false }
 reth-consensus-common = { path = "crates/consensus/common", default-features = false }
 reth-consensus-debug-client = { path = "crates/consensus/debug-client" }
+reth-consensus-hotstuff = { path = "crates/consensus/hotstuff" }
 reth-db = { path = "crates/storage/db", default-features = false }
 reth-db-api = { path = "crates/storage/db-api" }
 reth-db-common = { path = "crates/storage/db-common" }

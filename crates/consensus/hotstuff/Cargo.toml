@@ -1,0 +1,73 @@
+[package]
+name = "reth-consensus-hotstuff"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+homepage.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+# reth
+reth-basic-payload-builder.workspace = true
+reth-chainspec = { workspace = true, features = ["std"] }
+reth-consensus = { workspace = true, features = ["std"] }
+reth-engine-local.workspace = true
+reth-engine-primitives = { workspace = true, features = ["std"] }
+reth-eth-wire.workspace = true
+reth-ethereum-consensus = { workspace = true, features = ["std"] }
+reth-ethereum-engine-primitives = { workspace = true, features = ["std"] }
+reth-ethereum-payload-builder.workspace = true
+reth-ethereum-primitives = { workspace = true, features = ["std"] }
+reth-evm = { workspace = true, features = ["std"] }
+reth-evm-ethereum = { workspace = true, features = ["std"] }
+reth-execution-types = { workspace = true, features = ["std"] }
+reth-fs-util.workspace = true
+reth-network.workspace = true
+reth-network-api.workspace = true
+reth-network-peers = { workspace = true, features = ["std"] }
+reth-node-api.workspace = true
+reth-node-builder.workspace = true
+reth-node-ethereum.workspace = true
+reth-payload-builder.workspace = true
+reth-payload-builder-primitives.workspace = true
+reth-payload-primitives.workspace = true
+reth-primitives-traits = { workspace = true, features = ["std", "secp256k1"] }
+reth-provider.workspace = true
+reth-storage-api = { workspace = true, features = ["std"] }
+reth-tasks.workspace = true
+reth-transaction-pool.workspace = true
+
+# alloy
+alloy-consensus = { workspace = true, features = ["std"] }
+alloy-eips = { workspace = true, features = ["std"] }
+alloy-primitives = { workspace = true, features = ["std", "rlp", "serde"] }
+alloy-rlp = { workspace = true, features = ["derive", "std"] }
+alloy-rpc-types-engine.workspace = true
+alloy-rpc-types-eth.workspace = true
+
+# async
+futures-util.workspace = true
+tokio = { workspace = true, features = ["sync", "time", "macros"] }
+tokio-stream.workspace = true
+
+# crypto & misc
+eyre.workspace = true
+parking_lot.workspace = true
+rand.workspace = true
+secp256k1.workspace = true
+serde = { workspace = true, features = ["derive", "std"] }
+serde_json.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+alloy-genesis.workspace = true
+evm2.workspace = true
+proptest.workspace = true
+reth-e2e-test-utils.workspace = true
+reth-tracing.workspace = true
+tempfile.workspace = true

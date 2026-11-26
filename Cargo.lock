@@ -4194,6 +4194,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "example-hotstuff-node"
+version = "0.0.0"
+dependencies = [
+ "alloy-primitives",
+ "clap",
+ "eyre",
+ "reth-consensus-hotstuff",
+ "reth-ethereum",
+ "tracing",
+]
+
+[[package]]
 name = "example-manual-p2p"
 version = "0.0.0"
 dependencies = [
@@ -8331,6 +8343,63 @@ dependencies = [
  "serde",
  "serde_json",
  "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "reth-consensus-hotstuff"
+version = "2.11.0"
+dependencies = [
+ "alloy-consensus",
+ "alloy-eips",
+ "alloy-genesis",
+ "alloy-primitives",
+ "alloy-rlp",
+ "alloy-rpc-types-engine",
+ "alloy-rpc-types-eth",
+ "evm2",
+ "eyre",
+ "futures-util",
+ "parking_lot",
+ "proptest",
+ "rand 0.9.5",
+ "reth-basic-payload-builder",
+ "reth-chainspec",
+ "reth-consensus",
+ "reth-e2e-test-utils",
+ "reth-engine-local",
+ "reth-engine-primitives",
+ "reth-eth-wire",
+ "reth-ethereum-consensus",
+ "reth-ethereum-engine-primitives",
+ "reth-ethereum-payload-builder",
+ "reth-ethereum-primitives",
+ "reth-evm",
+ "reth-evm-ethereum",
+ "reth-execution-types",
+ "reth-fs-util",
+ "reth-network",
+ "reth-network-api",
+ "reth-network-peers",
+ "reth-node-api",
+ "reth-node-builder",
+ "reth-node-ethereum",
+ "reth-payload-builder",
+ "reth-payload-builder-primitives",
+ "reth-payload-primitives",
+ "reth-primitives-traits",
+ "reth-provider",
+ "reth-storage-api",
+ "reth-tasks",
+ "reth-tracing",
+ "reth-transaction-pool",
+ "secp256k1 0.33.1",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "thiserror 2.0.21",
+ "tokio",
+ "tokio-stream",
  "tracing",
 ]
 

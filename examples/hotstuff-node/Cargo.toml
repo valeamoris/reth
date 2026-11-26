@@ -1,0 +1,17 @@
+[package]
+name = "example-hotstuff-node"
+version = "0.0.0"
+publish = false
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+alloy-primitives.workspace = true
+clap.workspace = true
+eyre.workspace = true
+reth-consensus-hotstuff.workspace = true
+reth-ethereum = { workspace = true, features = ["node", "cli"] }
+tracing.workspace = true
+
+[lints]
+workspace = true
